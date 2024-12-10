@@ -73,10 +73,10 @@ function goToHomePage() {
 </script>
 
 <template>
-    <div class="container mx-auto p-4">
+    <div class="container mx-auto p-4 bg-gray-900 text-white">
         <header class="mb-4">
             <h1 v-if="quiz" class="text-2xl font-bold">{{ quiz.title }}</h1>
-            <p v-if="quiz" class="text-gray-600">
+            <p v-if="quiz" class="text-gray-400">
                 Question {{ currentQuestionIndex + 1 }} / {{ quiz.questions.length }}
             </p>
         </header>
