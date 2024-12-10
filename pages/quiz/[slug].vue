@@ -94,7 +94,7 @@ function goToHomePage() {
 
         <div v-if="quizCompleted" class="mt-4">
             <p class="text-xl font-semibold">Quiz terminé !</p>
-            <p class="text-lg">Score final : {{ score.toFixed(3) }}</p>
+            <p class="text-lg">Score final : {{ score.toFixed(3) }} / {{ quiz.questions.length * 5 }}</p>
             <button @click="resetQuiz" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 mt-2">
                 Recommencer
             </button>
